@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evama-electricals.pages.dev/sitemap.xml
