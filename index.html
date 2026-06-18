@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
 
 <title>Evama Electrical | Electrical Installation, Wiring & Maintenance Services Kenya</title>
 
@@ -1536,5 +1538,14 @@
   <span class="wa-label">Chat on WhatsApp</span>
   <span class="wa-btn">💬</span>
 </a>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('Service Worker registered'))
+        .catch(err => console.log('Service Worker error', err));
+    });
+  }
+  </script>
 </body>
 </html>
