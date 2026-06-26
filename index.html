@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0f172a">
-
+<link rel="icon" type="image/jpeg" href="images/evama-logo.jpg">
+<link rel="apple-touch-icon" href="images/evama-logo.jpg">
 <title>Evama Electrical | Electrical Installation, Wiring & Maintenance Services Kenya</title>
 
 <meta name="description" content="Evama Electrical provides professional electrical installation, maintenance, wiring, panel board installation, underground piping, renovations and commercial electrical services in Kenya." />
@@ -96,17 +97,37 @@
       border-bottom: 1px solid var(--border);
       animation: slideDown 0.7s ease both;
     }
-    .nav-logo {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 900;
-      font-size: 1.5rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--white);
-      display: flex; align-items: center; gap: 0.5rem;
-    }
-    .nav-logo .bolt { color: var(--yellow); font-size: 1.2rem; }
+    .nav-logo{
+  text-decoration:none;
+  color:var(--white);
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-img{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--yellow);
+  box-shadow:0 0 15px rgba(255,210,0,.35);
+}
+
+.logo-text{
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:1.5rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.logo-sub{
+  display:block;
+  color:var(--yellow);
+  font-size:.72rem;
+  letter-spacing:.18em;
+}
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
       font-size: 0.78rem;
@@ -140,6 +161,19 @@
       display: flex; align-items: center;
       overflow: hidden;
     }
+
+    .hero-logo{
+  margin-bottom:24px;
+}
+
+.hero-logo img{
+  width:170px;
+  height:170px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid var(--yellow);
+  box-shadow:0 0 30px rgba(255,210,0,.35);
+}
 
     /* Electric circuit background */
     .hero-canvas {
@@ -1066,7 +1100,22 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo"><span class="bolt">⚡</span> Evama Electrical</a>
+  <a href="#" class="nav-logo">
+
+    <!-- OLD LOGO
+    <span class="bolt">⚡</span> Evama Electrical
+    -->
+  
+    <img src="images/evama-logo.jpg"
+         alt="Evama Electrical Logo"
+         class="logo-img">
+  
+    <div class="logo-text">
+        EVAMA
+        <span class="logo-sub">ELECTRICAL SERVICES</span>
+    </div>
+  
+  </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#why">Why Us</a></li>
@@ -1085,6 +1134,10 @@
 
   <div class="hero-content">
     <div class="hero-left">
+      <div class="hero-logo">
+        <img src="images/evama-logo.jpg"
+             alt="Evama Electrical Logo">
+      </div>
       <span class="hero-eyebrow"><span class="eyebrow-line"></span>Licensed & Certified Electricians</span>
       <h1 class="hero-title">
         <span>We</span>
